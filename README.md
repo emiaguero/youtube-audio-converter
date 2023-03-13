@@ -9,7 +9,7 @@ In order for the code to work, you'll need to follow the insctructions below.
 * lameenc 1.4.2
 * moviepy 1.0.3
 
-## 2. Fixing moviepy error
+## 2. Fix moviepy error
 __1.__ Localize moviepy root folder, then enter to 'audio/fx/all' and open the '__ init __.py' file
 
 __2.__ Comment the code except for the import, then add the following lines:
@@ -95,3 +95,5 @@ __3.__ Then do the same but with video: 'video/fx/all', open the '__ init __.py'
 * from moviepy.video.fx.time_mirror import time_mirror
 
 * from moviepy.video.fx.time_symmetrize import time_symmetrize
+
+__4.__ Done.
