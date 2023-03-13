@@ -75,13 +75,13 @@ class AudioManager:
                 # Reads the audio data from the .WAV
                 pcm_data = wave_file.readframes(num_frames)
 
-            # Convertir los datos PCM no intercalados a intercalados
+            # Converts non-interleaved PCM data to interleaved
             pcm_array = np.frombuffer(pcm_data, dtype=np.int16)
             interleaved_pcm_array = np.empty_like(pcm_array)
             interleaved_pcm_array[::2] = pcm_array[::channels]
             interleaved_pcm_array[1::2] = pcm_array[1::channels]
             
-            # Codificar el audio MP3
+            # Encode audio to MP3
             self.encoder.set_channels(channels)
             self.encoder.set_bit_rate(bitrate)
             self.encoder.set_in_sample_rate(framerate)
