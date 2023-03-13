@@ -10,8 +10,9 @@ In order for the code to work, you'll need to follow the insctructions below.
 * moviepy 1.0.3
 
 ## 2. Fixing moviepy error
-1. Localize moviepy root folder, then enter to 'audio/fx/all' and open the '__ init __.py' file
-2. Comment the code except for the import, then add the following imports:
+__1.__ Localize moviepy root folder, then enter to 'audio/fx/all' and open the '__ init __.py' file
+
+__2.__ Comment the code except for the import, then add the following lines:
 
 * import moviepy.audio.fx as fx
 
@@ -31,7 +32,7 @@ In order for the code to work, you'll need to follow the insctructions below.
 
 <img src="https://cdn.discordapp.com/attachments/440939498738548737/1084858226618671114/image.png">
 
-3. Then do the same but with video: 'video/fx/all', open the '__ init __.py', comment the code and add the following imports:
+__3.__ Then do the same but with video: 'video/fx/all', open the '__ init __.py', comment the code and add the following lines:
 
 * import moviepy.video.fx as fx
 
